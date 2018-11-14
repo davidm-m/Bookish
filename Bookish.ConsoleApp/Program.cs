@@ -12,10 +12,10 @@ namespace Bookish.ConsoleApp
         static void Main(string[] args)
         {
             var dataAccessor = new DataAccessor();
-            var books = dataAccessor.GetBooks();
-            foreach (var book in books)
+            var authors = dataAccessor.GetAuthorByBook(1);
+            foreach (var author in authors)
             {
-                Console.WriteLine(book.Title);
+                Console.WriteLine(author.Name);
             }
 
             Console.ReadLine();
