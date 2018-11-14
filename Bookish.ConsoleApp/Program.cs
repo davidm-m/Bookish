@@ -17,6 +17,8 @@ namespace Bookish.ConsoleApp
             {
                 Console.WriteLine(book.Title);
             }
+
+            Console.ReadLine();
         }
     }
 }
